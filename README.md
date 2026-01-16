@@ -1,23 +1,10 @@
 # Portfolio — Zaineb Rahmani
+Hi
+This repository hosts my personal portfolio website (Vite + React + TypeScript). The site is for showcasing my projects and contact info.
 
-This repository hosts my personal portfolio website (Vite + React + TypeScript). The site is deployed as a static site for showcasing projects and contact info.
-
-Live demo: 
-
-Quick start
-
-```
-npm install
-npm run dev      # local dev server
-npm run build    # production build
-npm run preview  # preview production build
-```
+Live demo: https://portfoliozayrah.netlify.app/
 
 Contact
 
 - Email: zaineb.rah20@gmail.com
 - GitHub: https://github.com/Zaineb08
-
-License
-
-MIT
