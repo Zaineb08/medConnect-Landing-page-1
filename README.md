@@ -15,87 +15,41 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-````js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    # AI Portfolio - Zaineb Rahmani
+# Portfolio — Zaineb Rahmani
 
-    A bilingual (English/French) portfolio showcasing AI and Data Science projects with a terminal-inspired design.
+This repository hosts my personal portfolio website (Vite + React + TypeScript). The site is deployed as a static site for showcasing projects and contact info.
 
-    ## 🚀 Live Demo
+Live demo: https://zaineb08.github.io/portfolio
 
-    [View Portfolio](https://zaineb08.github.io/portfolio)
+Quick start
 
-    ## ✨ Features
+```
+npm install
+npm run dev      # local dev server
+npm run build    # production build
+npm run preview  # preview production build
+```
 
-    - 🌐 Bilingual support (English/French)
-    - 💻 Terminal-inspired minimalist design
-    - 📱 Fully responsive
-    - 🔍 Project filtering by category
-    - ⚡ Built with React + Tailwind CSS
+Deploy
 
-    ## 🛠️ Tech Stack
+- Use GitHub Pages, Netlify, Vercel, or your preferred static host.
+- To deploy with `gh-pages` (optional): add `homepage`, `predeploy` and `deploy` scripts, then run `npm run deploy`.
 
-    - React
-    - Tailwind CSS
-    - Lucide React (icons)
-    - Vite
+Scripts
 
-    ## 📦 Quick Start
+- `dev` — start dev server
+- `build` — build for production
+- `preview` — preview production build
+- `lint` — run ESLint
 
-    ```bash
-    # Install dependencies
-    npm install
+Contact
 
-    # Run development server
-    npm run dev
+- Email: zaineb.rah20@gmail.com
+- GitHub: https://github.com/Zaineb08
 
-    # Build for production
-    npm run build
+License
 
-    # Preview production build
-    npm run preview
-    ```
+MIT
 
-    ## 🚀 Deploy to GitHub Pages
-
-    ```bash
-    # Install gh-pages
-    npm install --save-dev gh-pages
-
-    # Add to package.json
-    {
-      "homepage": "https://yourusername.github.io/portfolio",
-      "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
-      }
-    }
-
-    # Deploy
-    npm run deploy
-    ```
-
-    ## 📝 Customization
-
-    Edit the component to update:
-    - Personal information (name, email, social links)
-    - Projects array
-    - Skills categories
-    - Language translations
-
-    ## 📄 License
-
-    MIT License - feel free to use this template for your own portfolio!
-
-    ## 📧 Contact
-
-    - Email: zaineb.rah20@gmail.com
-    - GitHub: [@Zaineb08](https://github.com/Zaineb08)
-    - LinkedIn: [Zaineb Rahmani](https://linkedin.com/in/zaineb-rahmani-07117315b)
-
-    ---
-
-    ⭐ Star this repo if you find it helpful!
-````
+If you'd like this README expanded with screenshots or deployment automation, tell me what to include.
+npm run build
