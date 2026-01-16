@@ -2,7 +2,7 @@
 
 This repository hosts my personal portfolio website (Vite + React + TypeScript). The site is deployed as a static site for showcasing projects and contact info.
 
-Live demo: https://zaineb08.github.io/portfolio
+Live demo: 
 
 Quick start
 
