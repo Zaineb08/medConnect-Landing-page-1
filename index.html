@@ -1,17 +1,548 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>zaineb_rahmani | ai_portfolio</title>
-    <meta
-      name="description"
-      content="Zaineb Rahmani - AI & Data Science Engineer specializing in Computer Vision and Machine Learning"
-    />
+    <title>MedConnect - L'ingénierie tech au service de la santé</title>
+    <!-- Tailwind CSS pour un design moderne et rapide -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icônes Lucide pour l'aspect visuel -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      /* Légère animation pour le hero */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body
+    class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-200 selection:text-emerald-900"
+  >
+    <!-- Header / Logo -->
+    <header
+      class="py-6 bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-40"
+    >
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <div class="bg-emerald-100 p-2 rounded-lg text-emerald-600">
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <span class="text-2xl font-bold text-slate-900 tracking-tight"
+            >MedConnect</span
+          >
+        </div>
+        <a
+          href="#contact"
+          class="hidden sm:block bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2.5 rounded-full font-medium transition duration-200 shadow-sm hover:shadow-md"
+        >
+          Nous contacter
+        </a>
+      </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section
+      class="py-20 md:py-32 bg-gradient-to-br from-white via-emerald-50/50 to-emerald-100/30 overflow-hidden relative"
+    >
+      <div
+        class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-emerald-200 rounded-full blur-3xl opacity-30"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 -mb-20 -ml-20 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30"
+      ></div>
+
+      <div
+        class="container mx-auto px-6 text-center max-w-4xl relative z-10 animate-fade-in"
+      >
+        <span
+          class="inline-block py-1 px-3 rounded-full bg-emerald-100 text-emerald-700 font-semibold tracking-wide uppercase text-xs mb-6 border border-emerald-200"
+        >
+          HealthTech Startup - Hackathon Ramadan IA 2026
+        </span>
+        <h1
+          class="text-5xl md:text-6xl font-extrabold text-slate-900 mt-3 mb-6 leading-tight tracking-tight"
+        >
+          L'ingénierie tech au service de
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-400"
+            >la santé de demain</span
+          >
+        </h1>
+        <p
+          class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed"
+        >
+          Une équipe spécialisée dans la création de solutions IT sur mesure
+          pour le secteur médical au Maroc.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#contact"
+            class="bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-medium text-lg transition duration-200 shadow-xl shadow-slate-900/20 flex items-center justify-center"
+          >
+            Discutons de votre projet
+            <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+          </a>
+          <a
+            href="#expertises"
+            class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-medium text-lg transition duration-200 flex items-center justify-center"
+          >
+            Découvrir nos solutions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Nos Expertises -->
+    <section id="expertises" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+            Notre ADN Technologique
+          </h2>
+          <p class="text-slate-600 mt-4 text-lg">
+            Des solutions pensées par des ingénieurs pour les professionnels de
+            santé.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Carte 1 -->
+          <div
+            class="p-8 bg-white rounded-3xl border border-slate-100 hover:border-emerald-100 hover:shadow-2xl hover:shadow-emerald-500/5 transition duration-300 group"
+          >
+            <div
+              class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <i data-lucide="code" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-slate-900">
+              Solutions sur mesure
+            </h3>
+            <p class="text-slate-600 leading-relaxed">
+              Développement de plateformes médicales, d'outils de gestion
+              hospitalière et d'applications B2G/B2B adaptées aux réalités du
+              terrain.
+            </p>
+          </div>
+
+          <!-- Carte 2 -->
+          <div
+            class="p-8 bg-white rounded-3xl border border-slate-100 hover:border-blue-100 hover:shadow-2xl hover:shadow-blue-500/5 transition duration-300 group relative overflow-hidden"
+          >
+            <div
+              class="absolute top-0 right-0 bg-blue-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl uppercase tracking-wider"
+            >
+              Spécialité
+            </div>
+            <div
+              class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <i data-lucide="brain-circuit" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-slate-900">
+              Intégration IA
+            </h3>
+            <p class="text-slate-600 leading-relaxed">
+              Automatisation, pré-orientation intelligente des patients et
+              scoring médical pour désengorger les urgences et CHU.
+            </p>
+          </div>
+
+          <!-- Carte 3 -->
+          <div
+            class="p-8 bg-white rounded-3xl border border-slate-100 hover:border-amber-100 hover:shadow-2xl hover:shadow-amber-500/5 transition duration-300 group"
+          >
+            <div
+              class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+            >
+              <i data-lucide="shield-check" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-slate-900">
+              Sécurité & Data
+            </h3>
+            <p class="text-slate-600 leading-relaxed">
+              Respect strict de la confidentialité des données médicales.
+              Hébergement cloud sécurisé et conformité réglementaire.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Étude de Cas (Notre Projet Référence) -->
+    <section class="py-20 bg-slate-900 text-white">
+      <div class="container mx-auto px-6">
+        <div
+          class="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row bg-slate-800 border border-slate-700"
+        >
+          <div
+            class="md:w-1/2 p-10 md:p-14 flex flex-col justify-center relative overflow-hidden"
+          >
+            <!-- Décoration fond -->
+            <div class="absolute -right-20 -bottom-20 opacity-10">
+              <i data-lucide="stethoscope" class="w-64 h-64"></i>
+            </div>
+
+            <span
+              class="text-emerald-400 uppercase text-xs tracking-widest font-bold mb-3 block"
+              >Notre Solution Phare</span
+            >
+            <h3 class="text-3xl md:text-4xl font-bold mt-2 mb-6 leading-tight">
+              Pré-orientation en ligne pour les CHU
+            </h3>
+            <p class="text-slate-300 leading-relaxed text-lg mb-8">
+              Pour pallier aux inégalités territoriales d'accès aux soins, nous
+              avons conçu une plateforme IA qui régule les demandes de
+              consultations spécialisées, évitant les déplacements inutiles.
+            </p>
+            <div class="flex items-center space-x-6">
+              <div>
+                <span class="block text-3xl font-extrabold text-emerald-400"
+                  >B2G</span
+                >
+                <span class="text-xs text-slate-400 uppercase tracking-wide"
+                  >Modèle</span
+                >
+              </div>
+              <div class="w-px h-10 bg-slate-600"></div>
+              <div>
+                <span class="block text-3xl font-extrabold text-blue-400"
+                  >SaaS</span
+                >
+                <span class="text-xs text-slate-400 uppercase tracking-wide"
+                  >Architecture</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="md:w-1/2 p-10 md:p-14 bg-slate-800/50 flex flex-col justify-center border-l border-slate-700"
+          >
+            <h4 class="text-xl font-bold text-white mb-6 flex items-center">
+              <i data-lucide="layers" class="mr-3 text-emerald-400"></i>
+              Avantages de la solution :
+            </h4>
+            <ul class="space-y-5">
+              <li class="flex items-start">
+                <i
+                  data-lucide="check-circle-2"
+                  class="text-emerald-500 w-6 h-6 mr-3 shrink-0 mt-0.5"
+                ></i>
+                <span class="text-slate-300"
+                  >Diminution drastique des déplacements inutiles pour les
+                  patients des zones rurales (ex: Région de l'Oriental).</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-lucide="check-circle-2"
+                  class="text-emerald-500 w-6 h-6 mr-3 shrink-0 mt-0.5"
+                ></i>
+                <span class="text-slate-300"
+                  >Analyse intelligente des dossiers médicaux (IA) pour
+                  déterminer l'urgence et le bon service.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-lucide="check-circle-2"
+                  class="text-emerald-500 w-6 h-6 mr-3 shrink-0 mt-0.5"
+                ></i>
+                <span class="text-slate-300"
+                  >Gain de temps massif pour le personnel médical et
+                  désengorgement des structures d'accueil.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Équipe (Solo Squad) -->
+    <section class="py-20 bg-slate-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <span
+            class="text-emerald-600 font-semibold tracking-wide uppercase text-sm"
+            >L'équipe</span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">
+            Rencontrez la Solo Squad
+          </h2>
+          <p class="text-slate-600 mt-4 text-lg">
+            La synergie parfaite entre développement technologique et expertise
+            métier.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto">
+          <!-- Membre 1 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-full mx-auto mb-4 flex items-center justify-center text-emerald-600 border-2 border-white shadow-md"
+            >
+              <i data-lucide="terminal" class="w-8 h-8"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">Ismail Bentour</h4>
+            <p class="text-xs text-emerald-600 font-medium mt-2">
+              Software Engineer
+            </p>
+          </div>
+
+          <!-- Membre 2 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full mx-auto mb-4 flex items-center justify-center text-blue-600 border-2 border-white shadow-md"
+            >
+              <i data-lucide="clipboard-list" class="w-8 h-8"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">Amine Qacemi</h4>
+            <p class="text-xs text-blue-600 font-medium mt-2">
+              Management et qualité des services de santé
+            </p>
+          </div>
+
+          <!-- Membre 3 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mx-auto mb-4 flex items-center justify-center text-purple-600 border-2 border-white shadow-md"
+            >
+              <i data-lucide="megaphone" class="w-8 h-8"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">Meryem Mchiouer</h4>
+            <p class="text-xs text-purple-600 font-medium mt-2">
+              Communication et Marketing
+            </p>
+          </div>
+
+          <!-- Membre 4 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-amber-100 to-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center text-amber-600 border-2 border-white shadow-md"
+            >
+              <i data-lucide="network" class="w-8 h-8"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">Zaineb Rahmani</h4>
+            <p class="text-xs text-amber-600 font-medium mt-2">
+              Master IA et Data Sciences
+            </p>
+          </div>
+
+          <!-- Membre 5 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center hover:-translate-y-2 transition duration-300 md:col-start-auto col-span-2 md:col-span-1"
+          >
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-slate-200 to-slate-300 rounded-full mx-auto mb-4 flex items-center justify-center text-slate-700 border-2 border-white shadow-md"
+            >
+              <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base">Hicham Elkebdani</h4>
+            <p class="text-xs text-slate-600 font-medium mt-2">
+              Etudiant ingénieur ENIAD
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact / Formulaire -->
+    <section id="contact" class="py-20 bg-white relative">
+      <div
+        class="absolute inset-0 bg-emerald-50/50 skew-y-3 origin-bottom-right -z-10"
+      ></div>
+      <div class="container mx-auto px-6 max-w-3xl">
+        <div
+          class="bg-white p-8 md:p-12 rounded-[2rem] shadow-2xl shadow-slate-200/50 border border-slate-100 relative"
+        >
+          <div
+            class="absolute -top-6 right-10 w-12 h-12 bg-emerald-500 rounded-2xl rotate-12 flex items-center justify-center text-white shadow-lg"
+          >
+            <i data-lucide="mail"></i>
+          </div>
+
+          <div class="mb-10">
+            <h2 class="text-3xl font-bold text-slate-900">
+              Construisons ensemble.
+            </h2>
+            <p class="text-slate-600 mt-3 text-lg">
+              Directeur d'hôpital, investisseur ou professionnel de santé ?
+              Laissez-nous un message.
+            </p>
+          </div>
+
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label class="block text-sm font-semibold text-slate-700 mb-2"
+                >Nom et Prénom <span class="text-emerald-500">*</span></label
+              >
+              <input
+                type="text"
+                required
+                class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white outline-none transition"
+                placeholder="Ex: Dr. Ahmed Alaoui"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-slate-700 mb-2"
+                >Établissement / Structure</label
+              >
+              <input
+                type="text"
+                class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white outline-none transition"
+                placeholder="Ex: CHU Oujda, Ministère de la Santé..."
+              />
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2"
+                  >Téléphone / WhatsApp
+                  <span class="text-emerald-500">*</span></label
+                >
+                <input
+                  type="tel"
+                  required
+                  class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white outline-none transition"
+                  placeholder="Ex: 06 00 00 00 00"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2"
+                  >Email pro <span class="text-emerald-500">*</span></label
+                >
+                <input
+                  type="email"
+                  required
+                  class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white outline-none transition"
+                  placeholder="Ex: contact@chu.ma"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-slate-700 mb-2"
+                >Votre message ou besoin
+                <span class="text-emerald-500">*</span></label
+              >
+              <textarea
+                required
+                rows="4"
+                class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:bg-white outline-none transition resize-none"
+                placeholder="Comment pouvons-nous vous aider ?"
+              ></textarea>
+            </div>
+
+            <p class="text-xs text-slate-500 leading-relaxed">
+              <i
+                data-lucide="shield"
+                class="w-3 h-3 inline mr-1 text-slate-400"
+              ></i>
+              Vos informations sont confidentielles et traitées dans le strict
+              respect de la loi 09-08 relative à la protection des données.
+            </p>
+
+            <button
+              type="submit"
+              class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 rounded-xl transition duration-200 shadow-lg shadow-slate-900/20 flex items-center justify-center space-x-2"
+            >
+              <span>Envoyer ma demande</span>
+              <i data-lucide="send" class="w-5 h-5"></i>
+            </button>
+            <p id="formSuccess" class="hidden text-green-600 font-bold mt-4">
+              Merci, votre message a bien été envoyé !
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-10 bg-slate-900 text-slate-400 text-center border-t border-slate-800"
+    >
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-center space-x-2 mb-4 opacity-50">
+          <i data-lucide="activity" class="text-emerald-500 w-6 h-6"></i>
+          <span class="text-xl font-bold text-white tracking-tight"
+            >MedConnect</span
+          >
+        </div>
+        <p class="text-sm">
+          &copy; 2026 MedConnect par la Solo Squad. Tous droits réservés.
+        </p>
+        <p class="text-xs mt-2 text-slate-600">
+          Fait avec passion au Hackathon Ramadan IA 2026 - Maroc
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bouton flottant WhatsApp -->
+    <a
+      href="https://wa.me/212600000000"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-emerald-600 hover:scale-110 transition duration-300 z-50 group"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+      <!-- Tooltip -->
+      <span
+        class="absolute right-16 bg-slate-900 text-white text-xs font-bold px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none"
+      >
+        Discuter sur WhatsApp
+      </span>
+    </a>
+
+    <!-- Initialisation des icônes Lucide -->
+    <script>
+      lucide.createIcons();
+      // Gestion de l'envoi du formulaire
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const form = e.target;
+          const data = {
+            nom: form.querySelector('input[type="text"]').value,
+            etablissement: form.querySelectorAll('input[type="text"]')[1].value,
+            telephone: form.querySelector('input[type="tel"]').value,
+            email: form.querySelector('input[type="email"]').value,
+            message: form.querySelector("textarea").value,
+          };
+          try {
+            const res = await fetch("http://localhost:3002/api/contact", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            });
+            if (res.ok) {
+              document.getElementById("formSuccess").classList.remove("hidden");
+              form.reset();
+            }
+          } catch (err) {
+            alert("Erreur lors de l'envoi. Merci de réessayer plus tard.");
+          }
+        });
+    </script>
   </body>
 </html>
